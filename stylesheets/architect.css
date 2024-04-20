@@ -79,7 +79,45 @@ nav a {
   width: 100%;
 }
 
-/* banner related styles */
+/* banner related styles ends here */
+
+/* main styles  */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* teams container section starts here */
+
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-content {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.teams-title {
+  font-family: 2.8rem;
+  font-weight: 700;
+}
+
+.teams-title .quick-list {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--Dark-03, #727272);
+}
+.teams-title .text-features {
+  color: #ff900e;
+}
+
+/* teams container section ends here */
 
 /* responsive styles start here */
 
