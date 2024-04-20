@@ -8,6 +8,11 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .btn-primary {
   border-radius: 8px;
   color: #fff;
@@ -32,11 +37,6 @@ header {
 }
 
 /* navigation style */
-
-.nav-title {
-  font-size: 3rem;
-  font-weight: 700;
-}
 
 nav {
   display: flex;
@@ -119,6 +119,55 @@ main {
 
 /* teams container section ends here */
 
+/* facts section started here */
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  padding: 40px 30px;
+}
+
+.facts-card-container .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+.facts-card-container .card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* facts section ends here */
+
+/*sponsor  section  starts here... */
+
+.sponsors {
+  text-align: center;
+}
+
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.sponsors-img-container img {
+  width: 165px;
+}
+
+/* sponsor section ends here.. */
+
 /* responsive styles start here */
 
 @media screen and (max-width: 576px) {
@@ -126,13 +175,20 @@ main {
     padding: 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .facts-card-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
 
-  .teams-content {
+  .teams-content,
+  .facts-card-container {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .facts-card-container {
+    gap: 20px;
   }
 
   .teams-img-container {
@@ -150,7 +206,8 @@ main {
   }
 
   nav,
-  .teams-container {
+  .teams-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
 }
